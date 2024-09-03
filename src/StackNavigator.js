@@ -4,6 +4,7 @@ import HomeScreen from "./screens/HomeScreen";
 import NavigationScreen from "./screens/NavigationScreen";
 import ScrollViewScreen from "./screens/ScrollViewScreen";
 import FlatListScreen from "./screens/FlatListScreen";
+import UsingApiScreen from "./screens/UsingApiScreen";
 
 import TabNavigator from "./TabNavigation";
 
@@ -19,6 +20,7 @@ export default function StackNavigator() {
         <Stack.Screen name="ScrollViewScreen" component={ScrollViewScreen} />
         <Stack.Screen name="FlatListScreen" component={FlatListScreen} />
         <Stack.Screen name="Navigation" component={NavigationScreen} />
+        <Stack.Screen name="api" component={UsingApiScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -5,6 +5,7 @@ import HomeScreen from "../screens/HomeScreen";
 import FlatListScreen from "../screens/FlatListScreen";
 import NavigationScreen from "../screens/NavigationScreen";
 import ScrollViewScreen from "../screens/ScrollViewScreen";
+import UsingApiScreen from "../screens/UsingApiScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -24,6 +25,8 @@ export default function TabNavigator() {
             iconName = "navigate";
           } else if (route.name === "ScrollView") {
             iconName = "document-text";
+          } else if (route.name === "api") {
+            iconName = "cloud";
           }
 
           return <Ionicons name={iconName} size={size} color={color} />;
@@ -33,6 +36,7 @@ export default function TabNavigator() {
       })}
     >
       <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="api" component={UsingApiScreen} />
       <Tab.Screen name="FlatList" component={FlatListScreen} />
       <Tab.Screen name="Navigation" component={NavigationScreen} />
       <Tab.Screen name="ScrollView" component={ScrollViewScreen} />

@@ -7,10 +7,10 @@ import {
   StyleSheet,
   Switch,
   FlatList,
-  TouchableOpacity,
 } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import Container from "../components/Container";
+import StyledTitle from "../components/StyledText";
 
 export default function HomeScreen({ navigation }) {
   const [task, setTask] = useState("");
@@ -51,6 +51,10 @@ export default function HomeScreen({ navigation }) {
     );
   };
 
+  const navigateToUsingApiScreen = () => {
+    navigation.navigate("api");
+  };
+
   const handleChangeStatus = (id, newStatus) => {
     setTasks(
       tasks.map((task) =>
@@ -61,7 +65,7 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <Container>
-      <Text style={styles.title}>Criação de Tarefas</Text>
+      <StyledTitle>TodoList</StyledTitle>
 
       <TextInput
         style={styles.input}
