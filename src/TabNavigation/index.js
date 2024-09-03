@@ -7,6 +7,14 @@ import NavigationScreen from "../screens/NavigationScreen";
 import ScrollViewScreen from "../screens/ScrollViewScreen";
 import UsingApiScreen from "../screens/UsingApiScreen";
 
+console.log(
+  HomeScreen,
+  FlatListScreen,
+  NavigationScreen,
+  ScrollViewScreen,
+  UsingApiScreen
+);
+
 const Tab = createBottomTabNavigator();
 
 export default function TabNavigator() {
