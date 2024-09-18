@@ -7,6 +7,7 @@ import FlatListScreen from "./screens/FlatListScreen";
 import UsingApiScreen from "./screens/UsingApiScreen";
 
 import TabNavigator from "./TabNavigation";
+import AcelerometerScreen from "./screens/AcelerometerScreen";
 
 // Create a Stack Navigator
 const Stack = createNativeStackNavigator();
@@ -16,6 +17,7 @@ export default function StackNavigator() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="tabs" component={TabNavigator} />
+        <Stack.Screen name="Acelerometer" component={AcelerometerScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="ScrollViewScreen" component={ScrollViewScreen} />
         <Stack.Screen name="FlatListScreen" component={FlatListScreen} />

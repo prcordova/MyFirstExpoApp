@@ -6,6 +6,7 @@ import FlatListScreen from "../screens/FlatListScreen";
 import NavigationScreen from "../screens/NavigationScreen";
 import ScrollViewScreen from "../screens/ScrollViewScreen";
 import UsingApiScreen from "../screens/UsingApiScreen";
+import AcelerometerScreen from "../screens/AcelerometerScreen";
 
 console.log(
   HomeScreen,
@@ -43,6 +44,7 @@ export default function TabNavigator() {
         tabBarInactiveTintColor: "#bbb",
       })}
     >
+      <Tab.Screen name="Acelerometer" component={AcelerometerScreen} />
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="api" component={UsingApiScreen} />
       <Tab.Screen name="FlatList" component={FlatListScreen} />
