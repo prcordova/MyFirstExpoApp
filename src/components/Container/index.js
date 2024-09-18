@@ -3,7 +3,9 @@ import styled from "styled-components/native"; // Use styled-components/native p
 
 const StyledContainer = styled.View`
   flex: 1;
+
   padding: ${(props) => props.padding || "20px"};
+  padding-top: 60px;
   background-color: ${(props) => props.bgColor || "white"};
 `;
 
